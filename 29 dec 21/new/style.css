@@ -1,0 +1,32 @@
+#add{
+    border-radius: 5px;
+    background-color: rgb(255, 127, 138);
+    width:200px;
+    margin-left: 50%;
+}
+#container{
+    border: 1px solid black;
+    display: flex;
+    margin-top: 10px;
+}
+.folder{
+    background-color: rgb(106, 11, 184);
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+   padding: 10px;
+   margin: 10px;
+   cursor: pointer;
+}
+.folder [action]{
+    text-decoration: underline;
+    cursor:grab;
+    color: black;
+}
+div[purpose=name]{
+    margin-top: 50px;
+    color:azure;
+}
+#add:hover{
+    transform: scale(1.02);
+}

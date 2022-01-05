@@ -1,0 +1,38 @@
+a=100,
+b=200,
+c=300,
+function fun(){
+    console.log(a+" "+b+" "+c);
+}
+Object.prototype.a=1000,
+Object.prototype.b=2000,
+Object.prototype.c=10000,
+
+
+
+let obj={
+    a:10,
+    b:20,
+    c:30,
+    fun1:function(){
+     console.log(a+" "+b+" "+ c)
+    },
+    fun2: fun,
+    fun3: ()=> {
+     console.log(a+" "+b+ " "+c);
+    },
+};
+let o2={
+    a:1000,
+    b:2000,
+    c:3000,
+};
+obj.fun1();
+fun();
+obj.fun2();
+obj.fun3();
+
+obj.fun1.call(o2);
+fun.call(o2);
+obj.fun2.call(o2);
+obj.fun3.call(o2);
